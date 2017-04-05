@@ -1,0 +1,291 @@
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/application.js"></script>
+
+
+<!-- blog body -->
+<div class = "body container-fluid">
+  <!-- row 1 -->
+  <div class = "row">
+  <!-- main blog post -->
+    <div class = "blog-section-main col-xs-12 col-sm-12 col-md-8">
+      <!-- blog image -->
+      <img class = "blog-img" src = "assets/Dotes.jpg">
+        <!-- heart -->
+        <div class = "heart">
+          <i class="fa fa-thumbs-o-up fa-2x" aria-hidden="true"></i>
+          <span class = "likes">456</span>
+
+        <!-- bookmark -->
+        <div class = "bookmark">
+          <i class="fa fa-diamond fa-2x" aria-hidden="true"></i>
+        </div>
+      </div>
+        <div style="clear: both;"></div>
+      <!-- post title -->
+      <h3> <%= Faker::Name.title %> </h3>
+      <!-- post body -->
+      <p> <%= Faker::RickAndMorty.quote %> </p>
+      <!-- post author -->
+      <h5 class="author"> <%= Faker::GameOfThrones.character %> <h5>
+      <!-- post date -->
+      <h5> <%= Faker::Date.backward(25) %> </h5>
+    </div>
+
+    <!-- side bar -->
+    <div class="sidebar hidden-xs hidden-sm col-md-4">
+      <nav class="navi flex-column">
+        <span class="sidebar-title">Most Liked&nbsp;&nbsp;
+          <i class="fa fa-thumbs-o-up fa-2x" aria-hidden="true"></i></span><p>
+        </br>
+        <a class="nav-link active" href="#">Don't You Dare Put That In Your Mouth</a><p><hr>
+        <a class="nav-link" href="#">How To Tell When A Girl Hates Your Guts</a><p><hr>
+        <a class="nav-link" href="#">If Your Friends All Ate At Arby's, Would You?</a><p><hr>
+        <a class="nav-link" href="#">10 Things You Probably Shouldn't Google At Work</a><p><hr>
+        <a class="nav-link" href="#">Why Is My Dad Secretly a Cage Fighter?</a><p><hr>
+        <a class="nav-link" href="#">Maximizing Radness and Minimalizing Whackness</a><p><hr>
+        <a class="nav-link" href="#">20 Reasons A Cat In A Hat is Cuter Than You Think</a><p><hr>
+        <a class="nav-link" href="#">Pneumono Ultra Microscopic Silico Volcano Conneosis </a><p><hr>
+      </nav>
+    </div>
+  </div>
+
+  <!-- row 2 -->
+  <div class="row">
+    <!-- blog post -->
+    <div class = "blog-section col-xs-12 col-sm-12 col-md-4">
+      <!-- blog image -->
+      <img class = "blog-img" src = "assets/OD.jpg">
+      <!-- heart -->
+      <div class = "heart">
+        <i class="fa fa-thumbs-o-up fa-2x" aria-hidden="true"></i>
+        <span class = "likes">367</span>
+
+      <!-- bookmark -->
+      <div class = "bookmark">
+        <i class="fa fa-diamond fa-2x" aria-hidden="true"></i>
+      </div>
+      </div>
+      <div style="clear: both;"></div>
+      <!-- post title -->
+      <h3> <%= Faker::Name.title %> </h3>
+      <!-- post body -->
+      <p> <%= Faker::RickAndMorty.quote %> </p>
+      <!-- post author -->
+      <h5 class="author"> <%= Faker::GameOfThrones.character %> <h5>
+      <!-- post date -->
+      <h5> <%= Faker::Date.backward(25) %> </h5>
+    </div>
+
+    <!-- blog post -->
+    <div class = "blog-section col-xs-12 col-sm-12 col-md-4">
+      <!-- blog image -->
+      <img class = "blog-img" src = "assets/SF.jpg">
+      <!-- heart -->
+      <div class = "heart">
+        <i class="fa fa-thumbs-o-up fa-2x" aria-hidden="true"></i>
+        <span class = "likes">666</span>
+
+      <!-- bookmark -->
+      <div class = "bookmark">
+        <i class="fa fa-diamond fa-2x" aria-hidden="true"></i>
+      </div>
+      </div>
+      <div style="clear: both;"></div>
+      <!-- post title -->
+      <h3> <%= Faker::Name.title %> </h3>
+      <!-- post body -->
+      <p> <%= Faker::RickAndMorty.quote %> </p>
+      <!-- post author -->
+      <h5 class="author"> <%= Faker::GameOfThrones.character %> <h5>
+      <!-- post date -->
+      <h5> <%= Faker::Date.backward(25) %> </h5>
+    </div>
+
+    <!-- blog post -->
+    <div class = "blog-section col-xs-12 col-sm-12 col-md-4">
+      <!-- blog image -->
+      <img class = "blog-img" src = "assets/Ursa.jpg">
+      <!-- heart -->
+      <div class = "heart">
+        <i class="fa fa-thumbs-o-up fa-2x" aria-hidden="true"></i>
+        <span class = "likes">367</span>
+
+      <!-- bookmark -->
+      <div class = "bookmark">
+        <i class="fa fa-diamond fa-2x" aria-hidden="true"></i>
+      </div>
+      </div>
+      <div style="clear: both;"></div>
+      <!-- post title -->
+      <h3> <%= Faker::Name.title %> </h3>
+      <!-- post body -->
+      <p> <%= Faker::RickAndMorty.quote %> </p>
+      <!-- post author -->
+      <h5 class="author"> <%= Faker::GameOfThrones.character %> <h5>
+      <!-- post date -->
+      <h5> <%= Faker::Date.backward(25) %> </h5>
+    </div>
+  </div>
+
+  <!-- row 3 -->
+  <div class="row">
+    <!-- blog post -->
+    <div class = "blog-section col-xs-12 col-sm-12 col-md-4">
+      <!-- blog image -->
+      <img class = "blog-img" src = "assets/Slark.jpg">
+      <!-- heart -->
+      <div class = "heart">
+        <i class="fa fa-thumbs-o-up fa-2x" aria-hidden="true"></i>
+        <span class = "likes">540</span>
+
+      <!-- bookmark -->
+      <div class = "bookmark">
+        <i class="fa fa-diamond fa-2x" aria-hidden="true"></i>
+      </div>
+      </div>
+      <div style="clear: both;"></div>
+      <!-- post title -->
+      <h3> <%= Faker::Name.title %> </h3>
+      <!-- post body -->
+      <p> <%= Faker::RickAndMorty.quote %> </p>
+      <!-- post author -->
+      <h5 class="author"> <%= Faker::GameOfThrones.character %> <h5>
+      <!-- post date -->
+      <h5> <%= Faker::Date.backward(25) %> </h5>
+    </div>
+
+    <!-- blog post -->
+    <div class = "blog-section col-xs-12 col-sm-12 col-md-4">
+      <!-- blog image -->
+      <img class = "blog-img" src = "assets/AM.jpg">
+      <!-- heart -->
+      <div class = "heart">
+        <i class="fa fa-thumbs-o-up fa-2x" aria-hidden="true"></i>
+        <span class = "likes">331</span>
+
+      <!-- bookmark -->
+      <div class = "bookmark">
+        <i class="fa fa-diamond fa-2x" aria-hidden="true"></i>
+      </div>
+      </div>
+      <div style="clear: both;"></div>
+      <!-- post title -->
+      <h3> <%= Faker::Name.title %> </h3>
+      <!-- post body -->
+      <p> <%= Faker::RickAndMorty.quote %> </p>
+      <!-- post author -->
+      <h5 class="author"> <%= Faker::GameOfThrones.character %> <h5>
+      <!-- post date -->
+      <h5> <%= Faker::Date.backward(25) %> </h5>
+    </div>
+
+    <!-- blog post -->
+    <div class = "blog-section col-xs-12 col-sm-12 col-md-4">
+      <!-- blog image -->
+      <img class = "blog-img" src = "assets/Invoker.jpg">
+      <!-- heart -->
+      <div class = "heart">
+        <i class="fa fa-thumbs-o-up fa-2x" aria-hidden="true"></i>
+        <span class = "likes">467</span>
+
+      <!-- bookmark -->
+      <div class = "bookmark">
+        <i class="fa fa-diamond fa-2x" aria-hidden="true"></i>
+      </div>
+      </div>
+      <div style="clear: both;"></div>
+      <!-- post title -->
+      <h3> <%= Faker::Name.title %> </h3>
+      <!-- post body -->
+      <p> <%= Faker::RickAndMorty.quote %> </p>
+      <!-- post author -->
+      <h5 class="author"> <%= Faker::GameOfThrones.character %> <h5>
+      <!-- post date -->
+      <h5> <%= Faker::Date.backward(25) %> </h5>
+    </div>
+
+    <!-- blog post -->
+    <div class = "blog-section col-xs-12 col-sm-12 col-md-4">
+      <!-- blog image -->
+      <img class = "blog-img" src = "assets/BS.jpg">
+      <!-- heart -->
+      <div class = "heart">
+        <i class="fa fa-thumbs-o-up fa-2x" aria-hidden="true"></i>
+        <span class = "likes">124</span>
+
+      <!-- bookmark -->
+      <div class = "bookmark">
+        <i class="fa fa-diamond fa-2x" aria-hidden="true"></i>
+      </div>
+      </div>
+      <div style="clear: both;"></div>
+      <!-- post title -->
+      <h3> <%= Faker::Name.title %> </h3>
+      <!-- post body -->
+      <p> <%= Faker::RickAndMorty.quote %> </p>
+      <!-- post author -->
+      <h5 class="author"> <%= Faker::GameOfThrones.character %> <h5>
+      <!-- post date -->
+      <h5> <%= Faker::Date.backward(25) %> </h5>
+    </div>
+
+    <!-- blog post -->
+    <div class = "blog-section col-xs-12 col-sm-12 col-md-4">
+      <!-- blog image -->
+      <img class = "blog-img" src = "assets/Silencer.jpg">
+      <!-- heart -->
+      <div class = "heart">
+        <i class="fa fa-thumbs-o-up fa-2x" aria-hidden="true"></i>
+        <span class = "likes">621</span>
+
+      <!-- bookmark -->
+      <div class = "bookmark">
+        <i class="fa fa-diamond fa-2x" aria-hidden="true"></i>
+      </div>
+      </div>
+      <div style="clear: both;"></div>
+      <!-- post title -->
+      <h3> <%= Faker::Name.title %> </h3>
+      <!-- post body -->
+      <p> <%= Faker::RickAndMorty.quote %> </p>
+      <!-- post author -->
+      <h5 class="author"> <%= Faker::GameOfThrones.character %> <h5>
+      <!-- post date -->
+      <h5> <%= Faker::Date.backward(25) %> </h5>
+    </div>
+
+    <!-- blog post -->
+    <div class = "blog-section col-xs-12 col-sm-12 col-md-4">
+      <!-- blog image -->
+      <img class = "blog-img" src = "assets/Spectre.jpg">
+      <!-- heart -->
+      <div class = "heart">
+        <i class="fa fa-thumbs-o-up fa-2x" aria-hidden="true"></i>
+        <span class = "likes">547</span>
+
+      <!-- bookmark -->
+      <div class = "bookmark">
+        <i class="fa fa-diamond fa-2x" aria-hidden="true"></i>
+      </div>
+      </div>
+      <div style="clear: both;"></div>
+      <!-- post title -->
+      <h3> <%= Faker::Name.title %> </h3>
+      <!-- post body -->
+      <p> <%= Faker::RickAndMorty.quote %> </p>
+      <!-- post author -->
+      <h5 class="author"> <%= Faker::GameOfThrones.character %> <h5>
+      <!-- post date -->
+      <h5> <%= Faker::Date.backward(25) %> </h5>
+    </div>
+
+  </div>
+  <hr>
+  <!-- row 4 -->
+  <div class="row4 hidden-xs hidden-sm">
+    <span class="more"><h4>😆 More Cool Stuff!😆<h4></span><hr>
+  </div>
+</div> <!-- close Blog body container -->
