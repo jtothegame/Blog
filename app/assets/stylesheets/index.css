@@ -7,6 +7,12 @@ img {
 body {
   background-color: black !important;
   color: white !important;
+  
+}
+
+html {
+  position: relative;
+  min-height: 100%
 }
 
 .bookmark {
@@ -19,5 +25,15 @@ body {
 }
 
 .more {
+  text-align: center;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.form-group {
   text-align: center;
 }

@@ -1,0 +1,22 @@
+<div class='container-fluid'>
+  <h1><%= @post.title %></h1>
+
+  <%= image_tag(@post.image, class: 'blog-img') %>
+  <div class = "heart">
+    <i class="fa fa-thumbs-o-up fa-2x" aria-hidden="true"></i>
+    <span class = "likes"><%= @post.likes %></span>
+
+<!-- bookmark -->
+  <div class = "bookmark">
+    <i class="fa fa-diamond fa-2x" aria-hidden="true"></i>
+  </div>
+</div>
+<div style="clear: both;"></div><br>
+
+  <h4>Contents: </h4><hr><%= @post.body_full %></p>
+<hr>
+
+  <h5 class="author"> <%= Faker::GameOfThrones.character %> <h5>
+    <p>Created At: <%= @post.created_at %></p>
+<!-- post date -->
+<br><br>

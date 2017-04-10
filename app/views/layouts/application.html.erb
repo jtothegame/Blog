@@ -43,7 +43,7 @@
              <span class="icon-bar"></span>
              <span class="icon-bar"></span>
            </button>
-           <a class="navbar-brand" href="#">Dotes Blog</a>
+           <a class="navbar-brand" href="/">Dotes Blog</a>
          </div>
 
          <!-- Collect the nav links, forms, and other content for toggling -->
@@ -55,25 +55,20 @@
              <div style="clear: both;"></div>
            </form>
            <ul class="nav navbar-nav navbar-right">
-             <li><a href="#">About</a></li>
-             <li><a href="#">Contact</a></li>
+             <li><a href="/about">About</a></li>
+             <li><a href="/contact">Contact</a></li>
            </ul>
            <ul class="nav navbar-nav bottom-nav">
-             <li><a href="#">Sign Up</a></li>
+             <li><%= link_to 'Sign Up', new_user_path %></li>
              <li><a href="#">Login</a></li>
            </ul>
          </div><!-- /.navbar-collapse -->
        </div><!-- /.container-fluid -->
-     </nav>
+     </nav><br><br><br>
 
-    <a href='/'>Home</a>
-    <%= link_to 'Home', root_path %>
-    |
-    <%= link_to 'About Us', about_path %>
-    |
-    <%= link_to 'Contact Us', contact_path %>
-    |
-    <hr>
+     <% if user_signed_in? %>
+      Hello <%= current_user.first_name %>
+      <% end %>
 
     <% if flash[:notice] %>
       <div class="flash-notice"><%= flash[:notice] %></div>
@@ -81,15 +76,10 @@
       <div class="flash-alert"><%= flash[:alert] %></div>
     <% end %>
 
-      <%= flash[:notice] %>
-      <%= flash[:alert] %>
-      <%= notice || alert %>
     <hr>
     <%= yield %>
 
-  </body>
-</html>
-
+<br>
 <!-- footer -->
 <footer class="footer">
   <div class="container">
@@ -107,3 +97,6 @@
     </div>
   </div>
 </footer>
+
+</body>
+</html>
