@@ -7,7 +7,7 @@ img {
 body {
   background-color: black !important;
   color: white !important;
-  
+  padding: 10px;
 }
 
 html {
@@ -36,4 +36,5 @@ html {
 
 .form-group {
   text-align: center;
+
 }

@@ -61,13 +61,14 @@
            <ul class="nav navbar-nav bottom-nav">
              <li><%= link_to 'Sign Up', new_user_path %></li>
              <li><a href="#">Login</a></li>
+             <li><%= link_to 'New Post', new_post_path %></li>
            </ul>
          </div><!-- /.navbar-collapse -->
        </div><!-- /.container-fluid -->
      </nav><br><br><br>
 
      <% if user_signed_in? %>
-      Hello <%= current_user.first_name %>
+      Welcome <%= current_user.first_name %>!
       <% end %>
 
     <% if flash[:notice] %>

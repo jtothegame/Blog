@@ -8,3 +8,20 @@ image_list.each do |image|
                  image: image
                  })
 end
+
+ 50.times do
+ Comment.create({ user: Faker::Name.title,
+                   body: Faker::ChuckNorris.fact,
+                })
+ end                
+
+ User.create({ first_name: 'Josh',
+               last_name: 'Gamble',
+               email: 'josh@gamble.com',
+               password: 'passw0rd',
+               password_confirmation: 'passw0rd'
+   })
+
+puts "Comments Created"
+puts "Posts Created"
+puts "User Created"

@@ -12,7 +12,7 @@ class HomeController < ApplicationController
   private
 
   def post_params
-    post_params = params.require(:post).permit([:title, :body, :id])
+    post_params = params.require(:post).permit([:title, :body, :image, :id])
   end
 
 end
