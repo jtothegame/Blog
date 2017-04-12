@@ -9,7 +9,7 @@ class CommentsController < ApplicationController
     # @comment = @post.comments.build(comment_params) is the same as doing @comment.post = @post
 
     if @comment.save
-      redirect_to post_path(@post), notice: 'Comment Created!'
+      redirect_to post_path(@comment.post), notice: 'Comment Created!'
     else
       redirect_to post_path(@post), alert: 'Something Went Wrong!'
     end

@@ -18,25 +18,24 @@ class PostsController < ApplicationController
   end
 
   def show
+    @post = Post.find(params[:id])
     @comment = Comment.new
-    @comment = Comment.all
-    redirect_to home_path
   end
 
   # def update
-  #   if !(can? :edit, @question)
+  #   if !(can? :edit, @post)
   #     redirect_to root_path, alert: 'access denied'
-  #   elsif @question.update(question_params)
-  #     redirect_to question_path(@question), notice: 'Question updated'
+  #   elsif @post.update(post_params)
+  #     redirect_to post_path(@post), notice: 'Post updated'
   #   else
   #     render :edit
   #   end
   # end
   #
   # def destroy
-  #   if can? :destroy, @question
-  #     @question.destroy
-  #     redirect_to questions_path, notice: 'Question Deleted'
+  #   if can? :destroy, @post
+  #     @post.destroy
+  #     redirect_to posts_path, notice: 'Post Deleted'
   #   else
   #     redirect_to root_path, alert: 'Access Denied'
   #   end

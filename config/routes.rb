@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   resources :users, only: [:new, :create]
 
   get('/home', { to: 'home#index'})
-  get('/home/:id', { to: 'home#show', as: 'home_show' })
+  # get('/home/:id', { to: 'home#show', as: 'home_show' })
 
   get('/about', { to: 'about#index' })
 
