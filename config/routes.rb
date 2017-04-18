@@ -7,6 +7,10 @@ Rails.application.routes.draw do
 
   resources :users, only: [:new, :create]
 
+  resources :sessions, only: [:new, :create, :edit] do
+    delete :destroy, on: :collection
+  end
+
   get('/home', { to: 'home#index'})
   # get('/home/:id', { to: 'home#show', as: 'home_show' })
 
@@ -15,5 +19,5 @@ Rails.application.routes.draw do
   get('/contact', { to: 'contact#index', as: 'contact' })
   post('/contact', { to: 'contact#create', as: 'contact_submit'})
 
-  root 'home#index'
+  root 'posts#index'
 end
